@@ -1,0 +1,24 @@
+{
+  "name": "gifthealth-prescription-report",
+  "version": "1.0.0",
+  "description": "CLI to process prescription events and produce patient fill/income reports",
+  "type": "module",
+  "bin": {
+    "prescription-report": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.0.9"
+  }
+}
